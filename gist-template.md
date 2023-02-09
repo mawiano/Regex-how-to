@@ -31,6 +31,8 @@ The Character class in the expression is (/d), and it will match any single digi
 
 ### Grouping and Capturing
 
+The primary way you group a section of a regex is by using parentheses (). Each section within parentheses is known as a subexpression. The three captured groups in the expression are ([a-z0-9_\.-]+), ([\da-z\.-]+), and ([a-z\.]{2,6}). 
+
 ### Bracket Expressions
 
 Anything inside a set of square brackets ([]) represents a range of characters that we want to match. Our Regex includes three uses of the square brackets, with the first being [a-z0-9_\.-]This part represents the username part of an email, and matches one or more characters that can be lower-case letters, digits, periods, underscores, or hyphens. The second set of square brackets [\da-z\.-] matches one or more characters that can be digits, lower-case letters, periods, or hyphens. It represents the name of the email server. The last set of brackets [a-z\.] matches any character a-z and the character ".". It represents the top-level domain (.com).
