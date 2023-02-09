@@ -23,9 +23,10 @@ In this tutorial I will explain the use of a Regex to match emails. The expressi
 ## Regex Components
 
 ### Anchors
-The anchors included are (^) which indicates the start of a string. The second anchor is the ($)
-### Quantifiers
+The first anchor includes is (^) which indicates the start of a string. While the second anchor is ($) which indicates the end of the string.
 
+### Quantifiers
+Quantifiers included in this Regex are (+) and {2,6}. The ()
 ### OR Operator
 
 ### Character Classes
@@ -35,6 +36,7 @@ The anchors included are (^) which indicates the start of a string. The second a
 ### Grouping and Capturing
 
 ### Bracket Expressions
+Anything inside a set of square brackets ([]) represents a range of characters that we want to match. Our Regex includes three uses of the square brackets, with the first being [a-z0-9_\.-]This part represents the username part of an email, and matches one or more characters that can be lower-case letters, digits, periods, underscores, or hyphens. The second set of square brackets [\da-z\.-] matches one or more characters that can be digits, lower-case letters, periods, or hyphens. It represents the name of the email server. The last set of brackets [a-z\.] matches any character a-z and the character ".". It represents the top-level domain (.com). 
 
 ### Greedy and Lazy Match
 
