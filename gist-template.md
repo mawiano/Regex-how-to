@@ -26,7 +26,8 @@ In this tutorial I will explain the use of a Regex to match emails. The expressi
 The first anchor includes is (^) which indicates the start of a string. While the second anchor is ($) which indicates the end of the string.
 
 ### Quantifiers
-Quantifiers included in this Regex are (+) and {2,6}. The ()
+Quantifiers included in this Regex are (+) and {2,6}. The (+) matches one or more occurrences of the preceding character, group, or character class. Using this will combine every part of the email together. The {2,6} will allow a match range of 2-6 characters for the character set of [a-z\.] Matches the pattern from a minimum of 2 number of times to a maximum of 6 number of times.
+
 ### OR Operator
 
 ### Character Classes
